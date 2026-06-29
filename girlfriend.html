@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emergency Mood Recovery</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:linear-gradient(135deg,#ff6b81,#ffb6c1);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    text-align:center;
+}
+
+.card{
+    background:white;
+    width:350px;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+button{
+    background:#ff4d6d;
+    color:white;
+    border:none;
+    padding:15px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#ff1744;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>🚨 Mood Recovery Center</h1>
+
+<h2>Patient Detected</h2>
+
+<p><strong>Your Beautiful Girlfriend ❤️</strong></p>
+
+<p>Symptoms:</p>
+
+<p>😔 Sad</p>
+<p>🥺 Needs Attention</p>
+<p>❤️ Misses Her Boyfriend</p>
+
+<button onclick="recover()">Start Treatment</button>
+
+</div>
+
+<script>
+
+function recover(){
+
+document.body.innerHTML=`
+
+<div style="display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+font-family:Arial;
+background:#ffdde1;
+text-align:center;">
+
+<div>
+
+<h1>🎉 Treatment Successful!</h1>
+
+<h2>You are officially diagnosed with...</h2>
+
+<h1>❤️ Being Loved Too Much ❤️</h1>
+
+<p>Your prescription:</p>
+
+<p>💋 Unlimited Kisses</p>
+
+<p>🤗 Infinite Hugs</p>
+
+<p>🍕 One Date ASAP</p>
+
+<p>😂 Smile Immediately</p>
+
+<h2>Love You ❤️</h2>
+
+</div>
+
+</div>
+
+`;
+
+}
+
+</script>
+
+</body>
+</html>
