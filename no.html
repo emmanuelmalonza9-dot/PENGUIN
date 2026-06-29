@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>💔 Oh no</title>
+  <title>💔 No?</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="card">
-    <h1>💔 Ouch...</h1>
-    <p>Maybe I’ll change your mind one day 😌</p>
+<div class="card">
+  <h1>💔 Are you sure?</h1>
+  <p>Try pressing NO if you can catch it 😏</p>
 
-    <img src="https://media.giphy.com/media/9Y5BbDSkSTiY8/giphy.gif" class="img">
+  <img src="https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif" class="img">
 
-    <a href="index.html"><button class="no">Try Again 🔁</button></a>
-  </div>
+  <button class="no" id="noBtn">NO 💔</button>
+
+  <br><br>
+  <a href="index.html"><button class="yes">Go Back 🔙</button></a>
+</div>
+
+<script>
+const btn = document.getElementById("noBtn");
+
+btn.addEventListener("click", function () {
+  const x = Math.random() * (window.innerWidth - 100);
+  const y = Math.random() * (window.innerHeight - 100);
+
+  btn.style.position = "absolute";
+  btn.style.left = x + "px";
+  btn.style.top = y + "px";
+});
+</script>
 
 </body>
 </html>
